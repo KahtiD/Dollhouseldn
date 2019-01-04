@@ -1,5 +1,7 @@
+require('dotenv').config();
 const WooCommerceAPI = require('woocommerce-api');
 const client= require('express').Router();
+
 
 const WooCommerce = new WooCommerceAPI({
   url: 'http://localhost:8888/',
