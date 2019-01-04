@@ -3,8 +3,8 @@ const client= require('express').Router();
 
 const WooCommerce = new WooCommerceAPI({
   url: 'http://localhost:8888/',
-  consumerKey: WOO_CONSUMER_KEY,
-  consumerSecret: WOO_CONSUMER_SECRET,
+  consumerKey: process.env.WOO_CONSUMER_KEY,
+  consumerSecret: process.env.WOO_CONSUMER_SECRET,
   wpAPI: true,
   version: 'wc/v3'
 });
